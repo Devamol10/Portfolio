@@ -9,6 +9,7 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
+
 @media only screen and (max-width: 1600px) {
   .section-container {
     width: 1200px;

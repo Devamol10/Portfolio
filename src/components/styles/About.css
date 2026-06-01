@@ -1,71 +1,136 @@
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: left;
-  place-items: center;
+  justify-content: center;
   position: relative;
-  opacity: 1;
-  height: auto;
+  height: var(--vh);
   width: var(--cWidth);
   margin: auto;
+  box-sizing: border-box;
 }
+
 .about-me {
-  padding: 50px 0px;
-  padding-bottom: 0;
-  width: 500px;
-  max-width: calc(100% - 15px);
+  width: 100%;
+  max-width: var(--cMaxWidth);
 }
-.about-me h3 {
-  font-size: 25px;
+
+.about-me h3.title {
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-weight: 400;
+  letter-spacing: 5px;
+  font-weight: 500;
   color: var(--accentColor);
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid rgba(194, 164, 255, 0.15);
+  padding-bottom: 12px;
+  display: inline-block;
 }
 
-.about-me p {
-  font-size: 33px;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-me p.para {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  color: rgba(234, 229, 236, 0.8);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Education Card styling */
+.edu-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.edu-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(194, 164, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.1);
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.edu-icon {
+  font-size: 24px;
+  color: var(--accentColor);
+  background: rgba(194, 164, 255, 0.08);
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.edu-item h4 {
+  font-size: 17px;
   font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0 0 4px 0;
 }
 
-@media only screen and (min-width: 600px) {
+.edu-item p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #adacac;
+  margin: 0;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
   .about-section {
-    justify-content: center;
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .about-me {
-    width: 500px;
-    max-width: calc(100% - 70px);
-    transform: translateY(0%);
+
+@media screen and (max-width: 768px) {
+  .about-me h3.title {
+    text-align: center;
+    display: block;
+    width: max-content;
+    margin: 0 auto 30px auto;
   }
-  .about-section {
-    opacity: 1;
+
+  .about-me p.para {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
   }
-}
-@media only screen and (min-width: 1025px) {
-  .about-section {
-    width: var(--cWidth);
-    justify-content: right;
-    max-width: 1920px;
-    height: var(--vh);
-    padding: 0px;
-    opacity: 1;
-  }
-  .about-me {
-    padding: 0px;
-    width: 50%;
-  }
-  .about-me p {
-    font-size: 1.9vw;
-    line-height: 2.3vw;
-  }
-}
-@media only screen and (min-width: 1950px) {
-  .about-me p {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
+
+  .edu-card {
+    padding: 20px;
   }
 }

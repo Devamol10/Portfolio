@@ -1,4 +1,4 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -10,59 +10,46 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href="mailto:amolbudhwant2685@gmail.com" data-cursor="disable">
+                amolbudhwant2685@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
+              <a href="tel:+919356980979" data-cursor="disable">
+                +91 93569 80979
               </a>
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/Devamol10"
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              Github <MdArrowOutward />
+              GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/amol-budhwant-8a7226303/"
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              Linkedin <MdArrowOutward />
+              LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://x.com"
+              href="https://drive.google.com/file/d/1J584__nOiTakp8PkyhskSAScM0817uxS/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
-              className="contact-social"
+              className="contact-resume"
             >
-              Twitter <MdArrowOutward />
+              Download Resume <MdArrowOutward />
             </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
-          </div>
-          <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
-            </h2>
-            <h5>
-              <MdCopyright /> 2024
-            </h5>
           </div>
         </div>
       </div>
