@@ -1,11 +1,7 @@
-import { SplitText } from "gsap-trial/SplitText";
 import gsap from "gsap";
-import { getSmoother } from "../utils/scrollSmoother";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
-  const smoother = getSmoother();
-  smoother?.paused(false);
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#050307", // Darker premium background
@@ -13,14 +9,9 @@ export function initialFX() {
     delay: 0.5,
   });
 
-  // SplitText animation for Name and Subtitle
-  const splitText = new SplitText([".landing-subtitle", ".landing-title"], {
-    type: "chars,lines",
-    linesClass: "split-line",
-  });
-
+  // Fade and slide-up for subtitle and title
   gsap.fromTo(
-    splitText.chars,
+    [".landing-subtitle", ".landing-title"],
     { opacity: 0, y: 50, filter: "blur(3px)" },
     {
       opacity: 1,
@@ -28,7 +19,7 @@ export function initialFX() {
       filter: "blur(0px)",
       duration: 1.0,
       ease: "power4.out",
-      stagger: 0.015,
+      stagger: 0.1,
       delay: 0.2,
     }
   );

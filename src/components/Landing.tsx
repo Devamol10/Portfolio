@@ -48,7 +48,7 @@ const Landing = () => {
               View Projects
             </a>
             <a href="https://drive.google.com/file/d/1J584__nOiTakp8PkyhskSAScM0817uxS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cta-btn cta-secondary" data-cursor="disable">
-              Download Resume
+              View Resume
             </a>
             <a href="https://github.com/Devamol10" target="_blank" rel="noopener noreferrer" className="cta-btn cta-tertiary" data-cursor="disable">
               GitHub

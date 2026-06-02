@@ -7,7 +7,7 @@ import SocialIcons from "./SocialIcons";
 import Work from "./Work";
 import WhatIDo from "./WhatIDo";
 import TechStack from "./TechStack";
-import setSplitText from "./utils/splitText";
+import setScrollRevealAnimations from "./utils/scrollReveal";
 
 const MainContainer = () => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -16,7 +16,7 @@ const MainContainer = () => {
 
   useEffect(() => {
     const resizeHandler = () => {
-      setSplitText();
+      setScrollRevealAnimations();
       setIsDesktopView(window.innerWidth > 1024);
     };
     resizeHandler();
