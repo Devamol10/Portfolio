@@ -94,6 +94,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer !important;
+  box-sizing: border-box;
 }
 
 .cta-primary {

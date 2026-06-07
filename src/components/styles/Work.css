@@ -160,6 +160,7 @@
   font-weight: 600;
   transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .work-button-primary {
@@ -331,9 +332,9 @@
 }
 
 .featured-badge {
-  position: absolute;
-  top: 20px;
-  left: 60px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: -10px;
   background: rgba(168, 85, 247, 0.15);
   border: 1px solid rgba(168, 85, 247, 0.4);
   color: #c2a4ff;
@@ -368,8 +369,6 @@
 
 @media only screen and (max-width: 1400px) {
   .featured-badge {
-    left: 30px;
-    top: 15px;
     font-size: 9px;
   }
 }
@@ -380,8 +379,6 @@
   }
 
   .featured-badge {
-    left: 20px;
-    top: 15px;
     font-size: 9px;
   }
 }
