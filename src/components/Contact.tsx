@@ -14,6 +14,8 @@ const Contact = () => {
                 amolbudhwant2685@gmail.com
               </a>
             </p>
+          </div>
+          <div className="contact-box">
             <h4>Phone</h4>
             <p>
               <a href="tel:+919356980979" data-cursor="disable">
@@ -29,6 +31,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
+              aria-label="GitHub Profile"
             >
               GitHub <MdArrowOutward />
             </a>
@@ -38,6 +41,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
+              aria-label="LinkedIn Profile"
             >
               LinkedIn <MdArrowOutward />
             </a>
@@ -47,6 +51,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-resume"
+              aria-label="Download Resume"
             >
               Download Resume <MdArrowOutward />
             </a>

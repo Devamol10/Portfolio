@@ -60,7 +60,7 @@ const Landing = () => {
         <div className="landing-content-right">
           <div className="profile-img-wrapper" ref={imageRef}>
             <div className="profile-glow"></div>
-            <img src={profilePhoto} alt="Amol Budhwant" className="profile-img" />
+            <img src={profilePhoto} alt="Amol Budhwant" className="profile-img" fetchPriority="high" />
           </div>
         </div>
 
